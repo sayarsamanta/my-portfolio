@@ -2,7 +2,7 @@ const info = {
   // ============ MAIN DETAILS ============
   main: {
     name: "Sayar Samanta",
-    description: `I am a seasoned React Native developer with 7 years of professional experience building scalable, user-friendly mobile applications. My expertise lies in crafting
+    description: `I  am a seasoned React Native developer with 7 years of professional experience building scalable, user-friendly mobile applications. My expertise lies in crafting
         cross-platform solutions, optimizing performance, and delivering high-quality
         apps that meet user needs and business goals.
         Eager to expand my skill set, I am currently exploring React.js and Node.js to
@@ -11,10 +11,19 @@ const info = {
         full-stack development to build end-to-end, impactful solutions. I am passionate
         about continuous learning, staying updated with the latest technologies, and
         collaborating on innovative projects.`,
+    shortDes:
+      "I am an experienced React Native developer with over 7 years of expertise in building scalable and intuitive mobile applications. I specialize in creating cross-platform solutions, optimizing app performance, and delivering high-quality applications that align with both user expectations and business objectives.",
     role: "Senior React Native Developer",
     photo: "../profilePic.png",
     email: "sayarsamanta@gmail.com",
   },
+  // ============ TYPE WRITER TEXT ============
+  loopText: [
+    "Quick Learner",
+    "Self Driven",
+    "Innovative Thinker",
+    "Team Management",
+  ],
 
   // ============ SOCIAL LINKS ============
   socials: {
