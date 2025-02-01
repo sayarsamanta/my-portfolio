@@ -3,6 +3,7 @@
   font-family: monospace;
   color: #aea9a9 !important;
   font-weight: 600 !important;
+  line-height: 1.5em;
 }
 
 .Typewriter__cursor {

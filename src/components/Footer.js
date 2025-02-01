@@ -12,7 +12,7 @@ function Footer() {
   let year = date.getFullYear();
   return (
     <div className="flex pt-10 dark:bg-darkBodyPrimary justify-between px-10">
-      <div className="dark:bg-darkBodyPrimary text-xs dark:text-white p-5 flex">
+      <div className="dark:bg-darkBodyPrimary text-xs text-black dark:text-white p-5 flex font-semibold">
         © {year} React & Tailwind CSS Portfolio.
       </div>
       <ul className="footer-icons flex justify-center items-center">
@@ -23,7 +23,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillGithub fill={darkMode ? "white" : "black"} />
+            <AiFillGithub fill={!darkMode ? "white" : "black"} />
           </a>
         </li>
         {/* <li className="social-icons m-2">
@@ -37,12 +37,12 @@ function Footer() {
         </li> */}
         <li className="social-icons m-2">
           <a href={linkedin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedinIn fill={darkMode ? "white" : "black"} />
+            <FaLinkedinIn fill={!darkMode ? "white" : "black"} />
           </a>
         </li>
         <li className="social-icons m-2">
           <a href={instagram} target="_blank" rel="noopener noreferrer">
-            <AiFillInstagram fill={darkMode ? "white" : "black"} />
+            <AiFillInstagram fill={!darkMode ? "white" : "black"} />
           </a>
         </li>
       </ul>

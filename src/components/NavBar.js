@@ -20,7 +20,7 @@ function NavBar() {
         "flex self-end py-7 px-10 text-lg text-black dark:bg-darkBodyPrimary"
       }
     >
-      <div className="flex">
+      <div className="flex font-semibold">
         <ul className="hidden self-end items-center m-auto text-center lg:flex md:flex dark:text-white">
           <Link to={"/"} className="pl-2 dark:text-white">
             <img
