@@ -3,9 +3,12 @@
 </h2>
 <div align="center">
   <img alt="Demo" src="./images/gitreadme.png" />
+  <img alt="Demo" width="300" height="600" src="./images/mobile.png" />
+  
 </div>
 
 <br/>
+[Demo Here](https://sayarportfolio.netlify.app)
 
 >Created my online portfolio using React and Tailwind CSS
 
