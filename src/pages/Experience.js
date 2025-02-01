@@ -12,7 +12,7 @@ function Experience() {
   return (
     <div className="h-full dark:bg-darkBodyPrimary">
       <VerticalTimeline
-        lineColor={!darkMode ? "white" : "grey"}
+        lineColor={darkMode ? "white" : "grey"}
         className="dark:bg-darkBodyPrimary"
       >
         <VerticalTimelineElement

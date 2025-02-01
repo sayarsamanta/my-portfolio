@@ -29,7 +29,7 @@ function Home() {
           <DownloadButton />
         </div>
         <img
-          src={!darkMode ? home : home}
+          src={darkMode ? home : home}
           className="self-start md:self-start xl:self-start lg:self-start md:h-[420px] md:w-[420px] lg:h-[520px] lg:w-[620px] sm:w-[320px] sm:h-[280px]"
           alt="homeImage"
         ></img>
