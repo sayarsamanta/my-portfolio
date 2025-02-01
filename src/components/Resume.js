@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useMemo, useState } from "react";
 import DownloadButton from "../common/DownloadButton";
 import { Document, Page, pdfjs } from "react-pdf";
 import pdf from "../assets/../assets/Sayar_Samanta_CV_4.pdf";
@@ -9,20 +9,16 @@ import useWindowDimensions from "../hook/useWindowDimensions";
 function Resume() {
   const { width: deviceWidth } = useWindowDimensions();
   const [numPages, setNumPages] = useState(0);
-  const [file, setFile] = useState();
-
-  useEffect(() => {
-    setFile(pdf);
-  }, []);
+  const pdfFile = useMemo(() => pdf, [pdf]);
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
   return (
-    <div className="h-full dark:bg-darkBodyPrimary justify-center items-center self-center text-center">
+    <div className="h-[100%] dark:bg-darkBodyPrimary justify-center items-center self-center text-center">
       <div className="justify-center items-center self-center ">
         <Document
           className={"mx-10"}
-          file={pdf}
+          file={pdfFile}
           onLoadSuccess={onDocumentLoadSuccess}
         >
           {Array.apply(null, Array(numPages))
