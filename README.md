@@ -1,4 +1,11 @@
-# Portfolio Website - Sayar Samanta v 1.0
+<h2 align="center">
+  Portfolio Website - v 1.0<br/>
+</h2>
+<div align="center">
+  <img alt="Demo" src="./images/gitreadme.png" />
+</div>
+
+<br/>
 
 >Created my online portfolio using React and Tailwind CSS
 
