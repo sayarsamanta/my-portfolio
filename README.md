@@ -11,6 +11,10 @@ clone this repository -> git clone https://github.com/sayarsamanta/my-portfolio.
 navigate to project directory -> cd my-portfolio
 install npm -> npm install i
 ```
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
 ## Built with
  - React JS.
  - Tailwind CSS.
