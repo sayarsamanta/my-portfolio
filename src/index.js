@@ -5,4 +5,8 @@ import { RouterProvider } from "react-router";
 import { route } from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={route} />);
+root.render(
+  <React.StrictMode>
+    <RouterProvider router={route} />
+  </React.StrictMode>
+);
