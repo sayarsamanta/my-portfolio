@@ -6,9 +6,9 @@
   <img alt="Demo" width="300" height="600" src="./images/mobile.png" />
   
 </div>
-
+<a href="https://sayarportfolio.netlify.app" target="_blank">Demo</a>
 <br/>
-[Demo Here](https://sayarportfolio.netlify.app)
+<br/>
 
 >Created my online portfolio using React and Tailwind CSS
 
