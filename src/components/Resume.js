@@ -5,6 +5,7 @@ import pdf from "../assets/../assets/Sayar_Samanta_CV_4.pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 import useWindowDimensions from "../hook/useWindowDimensions";
+import Loader from "../reusable/Loader";
 
 function Resume() {
   const { width: deviceWidth } = useWindowDimensions();
@@ -15,8 +16,16 @@ function Resume() {
   }
   return (
     <div className="h-[100%] dark:bg-darkBodyPrimary justify-center items-center self-center text-center">
-      <div className="justify-center items-center self-center ">
+      <div className="flex h-20 items-center justify-center">
+        <DownloadButton variant="default" />
+      </div>
+      <div className="justify-center items-center self-center h-screen dark:bg-darkBodyPrimary ">
         <Document
+          loading={
+            <div className="flex h-screen justify-center mt-60">
+              <Loader />
+            </div>
+          }
           className={"mx-10"}
           file={pdfFile}
           onLoadSuccess={onDocumentLoadSuccess}
@@ -27,9 +36,6 @@ function Resume() {
               <Page key={page} width={deviceWidth - 100} pageNumber={page} />
             ))}
         </Document>
-      </div>
-      <div className="flex h-20 items-center justify-center">
-        <DownloadButton variant="default" />
       </div>
     </div>
   );

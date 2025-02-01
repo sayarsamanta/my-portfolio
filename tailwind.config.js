@@ -15,6 +15,10 @@ module.exports = {
         darkBodyPrimary: "#44485c",
         darkBodySecondary: "#696c7c",
       },
+      animation: {
+        bounce200: "bounce 1s infinite 400ms",
+        bounce400: "bounce 1s infinite 600ms",
+      },
     },
   },
   plugins: [],
