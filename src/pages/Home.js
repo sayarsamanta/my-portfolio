@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-// import homeLight from "../assets/homeLight.svg";
-// import homeDark from "../assets/homeDark.svg";
+import React from "react";
 import home from "../assets/home.svg";
 import { useTheme } from "../context/ThemeProvider";
 import { motion } from "motion/react";
