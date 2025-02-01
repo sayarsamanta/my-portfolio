@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { useTheme } from "../context/ThemeProvider";
 import user_info from "../data/user_info";

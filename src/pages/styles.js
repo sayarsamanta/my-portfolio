@@ -1,5 +1,3 @@
-import { darkPrimaryColor, darkSecondaryColor } from "../utils/colors";
-
 export const styles = {
   contentStyle: {
     background: "#F5F5F5",
