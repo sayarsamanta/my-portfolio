@@ -40,67 +40,67 @@ function SkillsList() {
           className="flex shadow-xl items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30
          dark:bg-darkBodyPrimary m-6 rounded-md border-[1px] transition-all duration-500 hover:scale-90"
         >
-          <FaReact size={40} fill={!darkMode ? "white" : "grey"} />
+          <FaReact size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30 m-6 rounded-md border-[1px]">
-          <SiRedux size={40} fill={!darkMode ? "white" : "grey"} />
+          <SiRedux size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30 m-6 rounded-md border-[1px]">
-          <SiTailwindcss size={40} fill={!darkMode ? "white" : "grey"} />
+          <SiTailwindcss size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <FaHtml5 size={40} fill={!darkMode ? "white" : "grey"} />
+          <FaHtml5 size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <FaJava size={40} fill={!darkMode ? "white" : "grey"} />
+          <FaJava size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30 m-6 rounded-md border-[1px]">
-          <FaBootstrap size={40} fill={!darkMode ? "white" : "grey"} />
+          <FaBootstrap size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <FaNodeJs size={40} fill={!darkMode ? "white" : "grey"} />
+          <FaNodeJs size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <TfiAndroid size={40} fill={!darkMode ? "white" : "grey"} />
+          <TfiAndroid size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30 m-6 rounded-md border-[1px]">
-          <SiMacos size={40} fill={!darkMode ? "white" : "grey"} />
+          <SiMacos size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <IoLogoJavascript size={40} fill={!darkMode ? "white" : "grey"} />
+          <IoLogoJavascript size={40} fill={darkMode ? "white" : "grey"} />
         </div>
       </div>
       <Title name={toolsTitle} />
       <div className="flex flex-wrap justify-center pt-5">
         <div className="flex shadow-xl transition-all duration-500 items-center hover:scale-90 justify-center  w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30 dark:bg-darkBodyPrimary m-6 rounded-md border-[1px]">
-          <FaGithub size={40} fill={!darkMode ? "white" : "grey"} />
+          <FaGithub size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl transition-all hover:scale-90 duration-500 dark:bg-darkBodyPrimary items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <FaSlack size={40} fill={!darkMode ? "white" : "grey"} />
+          <FaSlack size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl transition-all hover:scale-90 duration-500 dark:bg-darkBodyPrimary items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <FaBitbucket size={40} fill={!darkMode ? "white" : "grey"} />
+          <FaBitbucket size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl transition-all hover:scale-90 duration-500 dark:bg-darkBodyPrimary items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <SiJira size={40} fill={!darkMode ? "white" : "grey"} />
+          <SiJira size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl transition-all hover:scale-90 duration-500 dark:bg-darkBodyPrimary items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <SiAndroidstudio size={40} fill={!darkMode ? "white" : "grey"} />
+          <SiAndroidstudio size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl transition-all hover:scale-90 duration-500 dark:bg-darkBodyPrimary items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <SiJest size={40} fill={!darkMode ? "white" : "grey"} />
+          <SiJest size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl transition-all hover:scale-90 duration-500 dark:bg-darkBodyPrimary items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <SiFirebase size={40} fill={!darkMode ? "white" : "grey"} />
+          <SiFirebase size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl transition-all hover:scale-90 duration-500 dark:bg-darkBodyPrimary items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <SiPostman size={40} fill={!darkMode ? "white" : "grey"} />
+          <SiPostman size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl transition-all hover:scale-90 duration-500 dark:bg-darkBodyPrimary items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <SiXcode size={40} fill={!darkMode ? "white" : "grey"} />
+          <SiXcode size={40} fill={darkMode ? "white" : "grey"} />
         </div>
         <div className="flex shadow-xl transition-all hover:scale-90 duration-500 dark:bg-darkBodyPrimary items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30  m-6 rounded-md border-[1px]">
-          <VscCode size={40} fill={!darkMode ? "white" : "grey"} />
+          <VscCode size={40} fill={darkMode ? "white" : "grey"} />
         </div>
       </div>
     </div>
