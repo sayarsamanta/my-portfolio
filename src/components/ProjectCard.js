@@ -1,8 +1,11 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useTheme } from "../context/ThemeProvider";
 function ProjectCard({ item }) {
+  const { darkMode } = useTheme();
   const { title, description, technologies, image, github } = item;
+
   return (
     <div className="block w-[330px] h-[500px] m-10 rounded-lg dark:bg-darkBodySecondary shadow-lg justify-center p-4">
       <img alt="projectcard" className="h-[200px] my-5" src={image}></img>
@@ -16,9 +19,17 @@ function ProjectCard({ item }) {
         }}
       >
         {github ? (
-          <AiFillGithub className="cursor-pointer" size={20} />
+          <AiFillGithub
+            className="cursor-pointer"
+            size={20}
+            fill={darkMode ? "white" : "grey"}
+          />
         ) : (
-          <FaExternalLinkAlt className="cursor-pointer" size={20} />
+          <FaExternalLinkAlt
+            className="cursor-pointer"
+            size={20}
+            fill={darkMode ? "white" : "grey"}
+          />
         )}
       </div>
     </div>
