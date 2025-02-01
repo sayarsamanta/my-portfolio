@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DownloadButton from "../common/DownloadButton";
 import { Document, Page, pdfjs } from "react-pdf";
-import Sayar_Samanta_CV_4 from "../assets/Sayar_Samanta_CV_4.pdf";
-import "react-pdf/dist/esm/Page/TextLayer.css";
-import "../components/ResumeStyle.css";
-import "react-pdf/dist/Page/TextLayer.css";
+import pdf from "../assets/../assets/Sayar_Samanta_CV_4.pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 import useWindowDimensions from "../hook/useWindowDimensions";
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();
+
 function Resume() {
   const { width: deviceWidth } = useWindowDimensions();
   const [numPages, setNumPages] = useState(0);
+  const [file, setFile] = useState();
+
+  useEffect(() => {
+    setFile(pdf);
+  }, []);
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
@@ -22,7 +22,7 @@ function Resume() {
       <div className="justify-center items-center self-center ">
         <Document
           className={"mx-10"}
-          file={Sayar_Samanta_CV_4}
+          file={pdf}
           onLoadSuccess={onDocumentLoadSuccess}
         >
           {Array.apply(null, Array(numPages))

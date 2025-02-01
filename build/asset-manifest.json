@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.815e2320.css",
+    "main.js": "/static/js/main.75fdc68d.js",
+    "static/media/foodmenu.png": "/static/media/foodmenu.11323442d47671740e18.png",
+    "static/media/portfolio.png": "/static/media/portfolio.faa0381dcfeeaf7b1f1e.png",
+    "static/media/nayomi.png": "/static/media/nayomi.61b2e5f6670f7b427621.png",
+    "static/media/Sayar_Samanta_CV_4.pdf": "/static/media/Sayar_Samanta_CV_4.e65e22885f1f722cefa1.pdf",
+    "static/media/home.svg": "/static/media/home.dcaeda2f435ef21625b430358ee99fba.svg",
+    "static/media/profilePic.png": "/static/media/profilePic.2feb2822ce6f047ded93.png",
+    "static/media/bodyshop.png": "/static/media/bodyshop.42a512b9b6d39c8c938e.png",
+    "static/media/lectureProject.png": "/static/media/lectureProject.44eadec185adaa5d6a8f.png",
+    "index.html": "/index.html",
+    "main.815e2320.css.map": "/static/css/main.815e2320.css.map",
+    "main.75fdc68d.js.map": "/static/js/main.75fdc68d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.815e2320.css",
+    "static/js/main.75fdc68d.js"
+  ]
+}
