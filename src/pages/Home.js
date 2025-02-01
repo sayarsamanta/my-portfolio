@@ -9,24 +9,13 @@ import Type from "../components/Type";
 import DownloadButton from "../common/DownloadButton";
 import { useMenuToggle } from "../context/MenuToggle";
 import AboutMe from "../components/AboutMe";
+import user_info from "../data/user_info";
 function Home() {
   const { darkMode } = useTheme();
   const { menu } = useMenuToggle();
-
-  useEffect(() => {
-    const call = callTest();
-    call();
-  }, []);
-
-  const callTest = () => {
-    let a = 10;
-    return function () {
-      function xy() {
-        console.log(a);
-      }
-      xy();
-    };
-  };
+  const {
+    main: { name },
+  } = user_info;
 
   return (
     <div className="dark:bg-darkBodyPrimary">
@@ -36,7 +25,7 @@ function Home() {
       >
         <div className=" flex flex-col items-center">
           <h1 className="dark:text-white text-lg pb-5 xl:hidden lg:hidden md:hidden sm:hidden">
-            {`Hi I am Sayar`}
+            {`Hi I am ${name}`}
           </h1>
 
           <DownloadButton />
@@ -52,7 +41,7 @@ function Home() {
           className="text-left ml-20 xl:mt-35 lg:mt-35  md:py-10 sm:py-10 lg:self-start md:self-start sm:self-start align-top   md:mt-5"
         >
           <h1 className="px-5 hidden md:block lg:block xl:block sm:block lg:text-4xl md:text-lg md:px-5 sm:text-xl dark:text-white sm:text-start">
-            {"Hi I am Sayar"}
+            {`Hi I am ${name}`}
             <span className="wave" role="img" aria-labelledby="wave">
               👋🏻
             </span>

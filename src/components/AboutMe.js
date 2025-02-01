@@ -15,7 +15,7 @@ function AboutMe() {
             duration: 0.5,
             scale: { type: "spring", visualDuration: 0.4, bounce: 0.2 },
           }}
-          className="dark:text-white text-justify px-44  text-xl mt-10 self-center"
+          className="dark:text-white text-justify px-24 md:px-44 lg:px-44 xl:px-44 text-sm  sm:text-lg mt-10 self-center"
         >
           {description}
         </motion.p>
