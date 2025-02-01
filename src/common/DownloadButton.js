@@ -18,7 +18,7 @@ function DownloadButton({ variant = "small" }) {
       }}
     >
       <IoCloudDownloadOutline fill="#4b5563" />
-      <span className="text-sm ml-2 text-gray-600">DOWNLOAD CV</span>
+      <span className="text-xs w-[100px] ml-2 text-gray-600">DOWNLOAD CV</span>
     </button>
   );
 }

@@ -12,8 +12,8 @@ function FloatingButton() {
           toggleTheme();
         }}
       >
-        {darkMode && <MdDarkMode fill="black" />}
-        {!darkMode && <MdOutlineWbSunny fill="white" />}
+        {!darkMode && <MdDarkMode fill="black" />}
+        {darkMode && <MdOutlineWbSunny fill="white" />}
       </button>
     </div>
   );
