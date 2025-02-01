@@ -16,9 +16,9 @@ function App() {
   return (
     <ThemeProvider>
       <MenuToggleProvider>
-        <div className="App">
+        <div className="App dark:bg-darkBodyPrimary">
           <NavBar />
-          <div className="h-full">
+          <div>
             <Outlet />
             <Footer />
           </div>
