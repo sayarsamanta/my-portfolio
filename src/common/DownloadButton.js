@@ -6,7 +6,7 @@ function DownloadButton({ variant = "small" }) {
     <button
       className={
         variant === "large"
-          ? "hidden lg:flex md:flex sm:flex m-10 p-4 border-[1px] h-10 sm:h-7 justify-center items-center bg-slate-100 rounded-md self-center shadow-md"
+          ? "hidden lg:flex md:flex sm:flex my-12 mx-5 p-4 border-[1px] h-10 sm:h-7 justify-center items-center bg-slate-100 rounded-md self-center shadow-md"
           : variant === "default"
           ? "flex p-4 border-[1px] h-10 sm:h-7 items-center bg-slate-100 rounded-md self-center shadow-md"
           : "flex bg-slate-100 rounded-md xl:hidden lg:hidden md:hidden sm:hidden  p-4 border-[1px] h-10 justify-center items-center self-center shadow-md"

@@ -13,7 +13,7 @@ module.exports = {
         bodyPrimary: "#faf8f5",
         bodySecondary: "#faf8f5",
         darkBodyPrimary: "#44485c",
-        darkBodySecondary: "#a0abdb",
+        darkBodySecondary: "#696c7c",
       },
     },
   },

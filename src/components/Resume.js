@@ -28,7 +28,7 @@ function Resume() {
           {Array.apply(null, Array(numPages))
             .map((x, i) => i + 1)
             .map((page) => (
-              <Page width={deviceWidth - 100} pageNumber={page} />
+              <Page key={page} width={deviceWidth - 100} pageNumber={page} />
             ))}
         </Document>
       </div>

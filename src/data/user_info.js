@@ -1,3 +1,8 @@
+import bodyshop from "../assets/bodyshop.png";
+import foodmenu from "../assets/foodmenu.png";
+import nayomi from "../assets/nayomi.png";
+import portfolio from "../assets/portfolio.png";
+import lectureProject from "../assets/lectureProject.png";
 const info = {
   // ============ MAIN DETAILS ============
   main: {
@@ -34,52 +39,53 @@ const info = {
   },
 
   // ============ PROJECTS ============
-  projects: [
-    {
-      title: "Basic Food Ordering App Till Cart Page",
-      description:
-        "Created a basic food ordering app from scratch using the fundamental knowledge of javaScript and React Core modules. Used Redux to store the app state and used RTK query to fetch data from API.",
-      technologies: "React, Tailwind, Redux",
-      github: "https://github.com/sayarsamanta/sayar_namaste_react",
-      link: "https://pseudocode-to-c.netlify.app/",
-    },
+  projects: {
+    title: "My Recent Works",
+    card: [
+      {
+        title: "Basic Food Ordering App Till Cart Page",
+        description:
+          "Created a basic food ordering app from scratch using the fundamental knowledge of javaScript and React Core modules. Used Redux to store the app state and used RTK query to fetch data from API.",
+        technologies: "React, Tailwind, Redux",
+        github: "https://github.com/sayarsamanta/sayar_namaste_react",
+        image: foodmenu,
+      },
 
-    {
-      title: "YouShare",
-      description:
-        "Developed to learn full-stack web development using Nuxt3, Express, and PostgreSQL in fulfillment of my internship requirements.",
-      technologies: "Nuxt, Tailwind, Express, PostgreSQL",
-      github: "https://github.com/dsbalico/YouShare",
-      link: "https://github.com/dsbalico/YouShare",
-    },
-
-    // {
-    //   title: "Draw & Classify",
-    //   description:
-    //     "Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.",
-    //   technologies: "React, Tailwind, Tensorflow",
-    //   github: "https://github.com/dsbalico/letter-digit-shape-classification",
-    //   link: "https://letterdigitshape-classification.netlify.app/",
-    // },
-
-    // {
-    //   title: "Chatroom",
-    //   description:
-    //     "Chatroom is a simple online chatting web application where you can create chat rooms and have a fun conversation with a group of people.",
-    //   technologies: "React, Tailwind, Firebase",
-    //   github: "https://github.com/dsbalico/chatroom",
-    //   link: "https://thechatroom.netlify.app/",
-    // },
-
-    // {
-    //   title: "Sudoku Solver",
-    //   description:
-    //     "Sudoku Solver is a web application that can generate or solve sudoku problems using simulated annealing, an optimization algorithm.",
-    //   technologies: "React, Tailwind, TypeScript",
-    //   github:
-    //     "https://github.com/dsbalico/sudoku-solver-using-simulated-annealing",
-    // },
-  ],
+      {
+        title: "Portfolio",
+        description:
+          "Developed a React based portfolio to showcase my skills. Uses tailwind to customize to app as well as to enable dark mode. Have an inbuilt PDF reader to read PDF files from local storage.",
+        technologies: "React PDF, Tailwind, JavaScript, Context",
+        github:
+          "https://github.com/sayarsamanta/my-portfolio/tree/sayar-develop",
+        image: portfolio,
+      },
+      {
+        title: "Nayomi",
+        description:
+          "Developed a React Native based mobile application. Currently available to download from app and play store respectively.",
+        technologies: "React Native, Firebase, Redux",
+        link: "https://play.google.com/store/apps/details?id=com.nayomi.app&hl=en",
+        image: nayomi,
+      },
+      {
+        title: "The Body Shop",
+        description:
+          "Using redux to maintain state of the application and followed best practices for ui design using material theme highly scalable application which also supports payment integration.",
+        technologies: "React Native, WebView, Redux",
+        link: "https://play.google.com/store/apps/details?id=com.tbs.saudiwest&hl=en",
+        image: bodyshop,
+      },
+      {
+        title: "Lecturenotes an e learning app",
+        description:
+          "Involved in initial app life cycle method for a smooth transition of making an react native application from an existing android application from scratch which also has more than five million downloads. ",
+        technologies: "React Native, Native Module, Redux",
+        link: "https://play.google.com/store/apps/details?id=in.lecturenotes.lecturenotes&hl=en",
+        image: lectureProject,
+      },
+    ],
+  },
 
   // ============ EDUCATION ============
   education: [
@@ -156,6 +162,15 @@ const info = {
       ],
     },
   ],
+
+  // ============ SKILLS ============
+  skills: {
+    title: "Professional Skillset",
+  },
+
+  tools: {
+    title: "Tools Used",
+  },
 
   // ============ CERTIFICATES ============
   certificates: [

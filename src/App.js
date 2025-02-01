@@ -5,21 +5,24 @@ import FloatingButton from "./reusable/FloatingButton";
 import { ThemeProvider } from "./context/ThemeProvider";
 import Home from "./pages/Home";
 import Experience from "./pages/Experience";
-import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
 import Error from "./pages/Error";
 import Footer from "./components/Footer";
 import "../src/style.css";
 import MenuToggleProvider from "./context/MenuToggle";
 import Resume from "./components/Resume";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
 function App() {
   return (
     <ThemeProvider>
       <MenuToggleProvider>
         <div className="App">
           <NavBar />
-          <Outlet />
-          <Footer />
+          <div className="h-full">
+            <Outlet />
+            <Footer />
+          </div>
+
           <FloatingButton />
         </div>
       </MenuToggleProvider>
