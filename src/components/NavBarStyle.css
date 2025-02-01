@@ -1,0 +1,9 @@
+.navbar-items {
+  padding-left: 15px;
+}
+.navbar-items:hover {
+  text-decoration: underline;
+}
+.navbar-collapse {
+  font-size: small;
+}
