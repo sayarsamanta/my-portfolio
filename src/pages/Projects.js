@@ -2,9 +2,7 @@ import React from "react";
 import user_info from "../data/user_info";
 import Title from "../reusable/Title";
 import ProjectCard from "../components/ProjectCard";
-import { useMenuToggle } from "../context/MenuToggle";
 function Projects() {
-  const { menu } = useMenuToggle();
   const {
     projects: { title, card: card },
   } = user_info;
