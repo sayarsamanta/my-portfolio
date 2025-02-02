@@ -6,7 +6,7 @@
   <img alt="Demo" width="300" height="600" src="./images/mobile.png" />
   
 </div>
-<a href="https://sayarportfolio.netlify.app" target="_blank">Demo</a>
+<a href="https://sayarportfolio.netlify.app/" target="_blank">Demo</a>
 <br/>
 <br/>
 
