@@ -42,7 +42,10 @@ function SkillsList() {
         >
           <FaReact size={30} fill={!darkMode ? "white" : "black"} />
         </div>
-        <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w340 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30 m-6 rounded-md border-[1px]">
+        <div
+          className="flex shadow-xl items-center justify-center w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30
+         dark:bg-darkBodyPrimary m-6 rounded-md border-[1px] transition-all duration-500 hover:scale-90"
+        >
           <SiRedux size={30} fill={!darkMode ? "white" : "black"} />
         </div>
         <div className="flex shadow-xl dark:bg-darkBodyPrimary items-center justify-center transition-all hover:scale-90 duration-500 w-40 h-20 md:w-40 md:h-20 lg:w-40 lg:h-20 sm:w-40 sm:h-20 xl:w-55 xl:h-30 m-6 rounded-md border-[1px]">

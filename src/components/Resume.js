@@ -19,14 +19,13 @@ function Resume() {
       <div className="flex h-20 items-center justify-center">
         <DownloadButton variant="default" />
       </div>
-      <div className="justify-center items-center self-center dark:bg-darkBodyPrimary h-[100%] ">
+      <div className="flex justify-center items-center self-center dark:bg-darkBodyPrimary h-[100%] ">
         <Document
           loading={
             <div className="flex h-screen justify-center mt-60">
               <Loader />
             </div>
           }
-          className={"mx-10"}
           file={pdfFile}
           onLoadSuccess={onDocumentLoadSuccess}
         >

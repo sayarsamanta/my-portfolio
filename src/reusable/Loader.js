@@ -1,16 +1,16 @@
 const Loader = () => {
-  let circleCommonClasses = "h-2.5 w-2.5 bg-current rounded-full";
+  let circleCommonClasses = "h-2.5 w-2.5 rounded-full";
 
   return (
     <div className="flex">
       <div
-        className={`${circleCommonClasses} mr-1 dark:bg-white animate-bounce`}
+        className={`${circleCommonClasses} mr-1 bg-black  dark:bg-white animate-bounce`}
       ></div>
       <div
-        className={`${circleCommonClasses} mr-1 dark:bg-white animate-bounce200`}
+        className={`${circleCommonClasses} mr-1 dark:bg-white bg-black animate-bounce200`}
       ></div>
       <div
-        className={`${circleCommonClasses}  dark:bg-white animate-bounce400`}
+        className={`${circleCommonClasses} bg-black  dark:bg-white animate-bounce400`}
       ></div>
     </div>
   );

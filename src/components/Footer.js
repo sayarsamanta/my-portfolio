@@ -11,7 +11,7 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <div className="flex pt-10 dark:bg-darkBodyPrimary justify-between px-10">
+    <div className="flex pt-10 dark:bg-darkBodyPrimary justify-between px-3">
       <div className="dark:bg-darkBodyPrimary text-xs text-black dark:text-white p-5 flex font-semibold">
         © {year} React & Tailwind CSS Portfolio.
       </div>

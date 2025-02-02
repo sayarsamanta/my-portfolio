@@ -12,19 +12,37 @@ import MenuToggleProvider from "./context/MenuToggle";
 import Resume from "./components/Resume";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import { useEffect, useState } from "react";
+import Loader from "./reusable/Loader";
 function App() {
+  const [load, upadateLoad] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      upadateLoad(false);
+    }, 1200);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <ThemeProvider>
       <MenuToggleProvider>
-        <div className="App dark:bg-darkBodyPrimary">
-          <NavBar />
-          <div>
-            <Outlet />
-            <Footer />
+        {load && (
+          <div className="flex h-screen w-screen items-center justify-center bg-white dark:bg-darkBodyPrimary">
+            <Loader load={load} />
           </div>
+        )}
+        {!load && (
+          <div className="App dark:bg-darkBodyPrimary">
+            <NavBar />
+            <div>
+              <Outlet />
+              <Footer />
+            </div>
 
-          <FloatingButton />
-        </div>
+            <FloatingButton />
+          </div>
+        )}
       </MenuToggleProvider>
     </ThemeProvider>
   );
