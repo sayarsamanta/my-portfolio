@@ -2,12 +2,17 @@ import React from "react";
 import user_info from "../data/user_info";
 import Title from "../reusable/Title";
 import ProjectCard from "../components/ProjectCard";
+import { useMenuToggle } from "../context/MenuToggle";
 function Projects() {
+  const { menu } = useMenuToggle();
   const {
     projects: { title, card: card },
   } = user_info;
   return (
-    <div className="h-full dark:bg-darkBodyPrimary">
+    <div
+      className="h-full dark:bg-darkBodyPrimary"
+      style={{ paddingTop: "20px" }}
+    >
       <Title name={title} />
       <div className="flex flex-wrap justify-center">
         {card.map((item) => {

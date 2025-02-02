@@ -5,7 +5,7 @@ import { MdDarkMode, MdOutlineWbSunny } from "react-icons/md";
 function FloatingButton() {
   const { toggleTheme, darkMode } = useTheme();
   return (
-    <div className="flex justify-center dark:bg-bodyPrimary bg-darkBodyPrimary h-14 w-14  bottom-20 fixed z-90 right-10 rounded-lg">
+    <div className="flex justify-center dark:bg-bodyPrimary bg-darkBodyPrimary h-10 w-10 top-5 fixed z-90 right-10 rounded-lg">
       <button
         className="self-center"
         onClick={() => {
