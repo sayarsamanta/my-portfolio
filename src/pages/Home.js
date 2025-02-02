@@ -5,12 +5,10 @@ import { motion } from "motion/react";
 import "../pages/index.css";
 import Type from "../components/Type";
 import DownloadButton from "../common/DownloadButton";
-import { useMenuToggle } from "../context/MenuToggle";
 import AboutMe from "../components/AboutMe";
 import user_info from "../data/user_info";
 function Home() {
   const { darkMode } = useTheme();
-  const { menu } = useMenuToggle();
   const {
     main: { name },
   } = user_info;

@@ -7,10 +7,8 @@ import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "../components/WorkIcon";
 import { styles } from "./styles";
 import { useTheme } from "../context/ThemeProvider";
-import { useMenuToggle } from "../context/MenuToggle";
 function Experience() {
   const { darkMode } = useTheme();
-  const { menu } = useMenuToggle();
 
   return (
     <div
