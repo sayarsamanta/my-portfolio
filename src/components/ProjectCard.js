@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useTheme } from "../context/ThemeProvider";
+import placeholder from "../assets/placeholder.png";
 function ProjectCard({ item }) {
   const { darkMode } = useTheme();
+  const [load, setLoad] = useState(false);
   const { title, description, technologies, image, github } = item;
-
+  const handleLoad = () => {
+    setLoad(true);
+  };
   return (
-    <div className="block w-[330px] h-[500px] m-10 rounded-lg dark:bg-darkBodyPrimary shadow-lg justify-center p-4">
-      <img alt="projectcard" className="h-[200px] my-5" src={image}></img>
+    <div
+      key={title}
+      className="block w-[330px] h-[500px] m-10 rounded-lg dark:bg-darkBodyPrimary shadow-lg justify-center p-4"
+    >
+      <img
+        onLoad={handleLoad}
+        alt="projectcard"
+        className="h-[200px] my-5"
+        src={!load ? placeholder : image}
+      ></img>
       <h3 className="text-sm font-semibold dark:text-white">{title}</h3>
       <p className="text-sm/6 dark:text-white">{description}</p>
       <span className="text-xs underline dark:text-white">{technologies}</span>

@@ -29,7 +29,7 @@ function Experience() {
           </h3>
 
           <ul>
-            <li className="text-sm text-black">
+            <li className="text-xs sm:text-sm text-wrap text-black px-5">
               Led the effort to upgrade outdated apps to a more contemporary
               React-based framework, which improved application speed and
               reduced load times by 30%.
@@ -52,9 +52,9 @@ function Experience() {
           </h3>
 
           <ul>
-            <li className="text-sm text-black">
+            <li className="text-xs sm:text-sm text-wrap text-black px-5">
               Led a project to switch to React, resulting in a 25% smaller
-              codebase and a 35% faster loading time for webpages.Conducted
+              codebase and a 35% faster loading time for webpages. Conducted
               thorough system audits, identifying inefficiencies and
               recommending enhancements to improve performance.
             </li>
@@ -75,13 +75,13 @@ function Experience() {
           </h3>
           {/* <h4 className="vertical-timeline-element-subtitle">Gurgaon, India</h4> */}
           <ul>
-            <li className="text-sm text-black">
+            <li className="text-xs sm:text-sm text-wrap text-black px-5">
               Worked with stakeholders to include improvements and new features
               for overall product success. Coordinated with product managers to
               define clear project scopes, ensuring alignment with business
               goals and objectives.
             </li>
-            <li className="text-sm text-black"></li>
+            <li className="text-xs sm:text-sm text-wrap text-black px-5"></li>
           </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -101,7 +101,7 @@ function Experience() {
             Bhubaneswar, India
           </h4> */}
           <ul>
-            <li className="text-sm text-black">
+            <li className="text-xs sm:text-sm text-wrap text-black px-5">
               Analyzed user feedback to make informed decisions on software
               enhancements, leading to a 25% increase in customer satisfaction
               for overall product. Implemented security protocols and encryption
@@ -127,7 +127,7 @@ function Experience() {
             Bengaluru, India
           </h4> */}
           <ul>
-            <li className="text-sm text-black">
+            <li className="text-xs sm:text-sm text-wrap text-black px-5">
               Implemented industry standards to produce reliable, user-friendly
               apps. Managed application updates on Google Play Store, including
               version control and release notes documentation.
@@ -151,7 +151,7 @@ function Experience() {
             Bengaluru, India
           </h4> */}
           <ul>
-            <li className="text-sm text-black">
+            <li className="text-xs sm:text-sm text-wrap text-black px-5">
               Completed Android training and organized new hires' training
               programs
             </li>

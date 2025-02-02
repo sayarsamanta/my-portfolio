@@ -67,7 +67,7 @@ function NavBar() {
               }}
               style={{ width: width - 90 }}
               className={
-                "flex absolute  h-36 mt-4 z-10 top-15 rounded-lg justify-center overflow-hidden bg-bodyPrimary text-black dark:bg-darkBodyPrimary dark:text-white"
+                "flex absolute  h-36 mt-4 z-10 top-15 rounded-lg justify-center overflow-hidden  text-black dark:bg-darkBodyPrimary dark:text-white"
               }
             >
               <ul>
