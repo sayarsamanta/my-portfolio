@@ -19,7 +19,7 @@ function Home() {
     <div className="dark:bg-darkBodyPrimary">
       <div
         className="lg:flex md:flex sm:flex  self-center place-items-center px-10 md:px-20 lg:px-30 xl:px-40 "
-        style={{ paddingTop: menu ? "30%" : "2%" }}
+        style={{ paddingTop: "2%" }}
       >
         <div className=" flex flex-col items-center">
           <h1 className="dark:text-white text-lg pb-5 xl:hidden lg:hidden md:hidden sm:hidden">
