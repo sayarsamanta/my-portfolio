@@ -3,6 +3,7 @@ import foodmenu from "../assets/foodmenu.png";
 import nayomi from "../assets/nayomi.png";
 import portfolio from "../assets/portfolio.png";
 import lectureProject from "../assets/lectureProject.png";
+import netflixclone from "../assets/netflixclone.png";
 const info = {
   // ============ MAIN DETAILS ============
   main: {
@@ -42,6 +43,14 @@ const info = {
   projects: {
     title: "My Recent Works",
     card: [
+      {
+        title: "Netflix Clone",
+        description:
+          "Created Netflix like clone using create react app. This has the firebase authentication, Google sign in option. Features like add to favorite and search for a specific movie is implemented.",
+        technologies: "React, Tailwind, Redux",
+        github: "https://github.com/sayarsamanta/sayar_netflix_clone",
+        image: netflixclone,
+      },
       {
         title: "Basic Food Ordering App Till Cart Page",
         description:
